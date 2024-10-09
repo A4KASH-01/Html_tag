@@ -7,7 +7,9 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background-image: url('your-image.jpg'); /* এখানে আপনার পিকচারটির পাথ/লিংক দিন */
+            background-size: cover;
+            background-position: center;
             margin: 0;
             padding: 0;
             display: flex;
@@ -15,9 +17,10 @@
             align-items: center;
             min-height: 100vh;
             text-align: center;
+            backdrop-filter: blur(5px) brightness(0.6); /* ব্যাকগ্রাউন্ড ঝাপসা এবং একটু ডার্ক করা হয়েছে */
         }
         .container {
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.8);
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             padding: 40px;
@@ -69,7 +72,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>আকাশ মাহমুদ </h1> 
+        <h1>আকাশ মাহমুদ</h1> <!-- এখানে আপনার নাম দিন -->
         <p>স্বাগতম! আমার ওয়েবসাইটে প্রবেশ করার জন্য ধন্যবাদ।</p>
         <a href="#!" class="button" onclick="showDescription()">আরও জানুন</a>
 
@@ -100,6 +103,19 @@
                 <li><strong>&lt;label&gt;</strong>: ইনপুট ফিল্ডের জন্য লেবেল নির্দেশ করে।</li>
                 <li><strong>&lt;button&gt;</strong>: বাটন তৈরি করে।</li>
                 <li><strong>&lt;script&gt;</strong>: জাভাস্ক্রিপ্ট কোড যুক্ত করে।</li>
+                <li><strong>&lt;nav&gt;</strong>: নেভিগেশন লিংক নির্দেশ করে।</li>
+                <li><strong>&lt;section&gt;</strong>: ডকুমেন্টের একটি বিভাগ নির্দেশ করে।</li>
+                <li><strong>&lt;article&gt;</strong>: একটি স্বাধীন কনটেন্ট ব্লক নির্দেশ করে।</li>
+                <li><strong>&lt;aside&gt;</strong>: প্রধান কনটেন্টের বাইরে থাকা কনটেন্ট নির্দেশ করে।</li>
+                <li><strong>&lt;footer&gt;</strong>: পেজের নিচের অংশ নির্দেশ করে।</li>
+                <li><strong>&lt;header&gt;</strong>: পেজের উপরের অংশ নির্দেশ করে।</li>
+                <li><strong>&lt;main&gt;</strong>: ডকুমেন্টের প্রধান কনটেন্ট নির্দেশ করে।</li>
+                <li><strong>&lt;blockquote&gt;</strong>: কোটেশন ব্লক নির্দেশ করে।</li>
+                <li><strong>&lt;figure&gt;</strong>: কনটেন্টের কোনো গ্রুপ নির্দেশ করে, যেমন চিত্র বা চার্ট।</li>
+                <li><strong>&lt;figcaption&gt;</strong>: চিত্র বা ফিগারের জন্য ক্যাপশন যুক্ত করে।</li>
+                <li><strong>&lt;mark&gt;</strong>: টেক্সটকে হাইলাইট করে দেখায়।</li>
+                <li><strong>&lt;time&gt;</strong>: সময় নির্দেশ করে।</li>
+                <li><strong>&lt;progress&gt;</strong>: কাজের প্রগ্রেস নির্দেশ করে।</li>
             </ul>
         </div>
     </div>
