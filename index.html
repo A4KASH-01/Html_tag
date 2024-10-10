@@ -4,104 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>আমার ওয়েবসাইট</title>
+    <link rel="stylesheet" href="styles.css"> <!-- CSS ফাইল যুক্ত করা হলো -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-image: url('background.jpg'); /* এখানে আপনার পিকচারটির পাথ/লিংক দিন */
-            background-size: cover;
-            background-position: center;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            text-align: center;
-            backdrop-filter: blur(5px) brightness(0.5); /* ব্যাকগ্রাউন্ড ঝাপসা এবং ডার্ক করা হয়েছে */
-        }
-        .container {
-            background-color: rgba(255, 255, 255, 0.85); /* ট্রান্সপারেন্ট ব্যাকগ্রাউন্ড */
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            padding: 40px;
-            width: 90%;
-            max-width: 600px;
-            transition: all 0.3s ease;
-        }
-        h1 {
-            font-size: 2.5em;
-            color: #333;
-        }
-        p {
-            font-size: 1.2em;
-            color: #666;
-        }
-        .button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        .button:hover {
-            background-color: #45a049;
-        }
-        .description {
-            display: none;
-            text-align: left;
-            margin-top: 20px;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        footer {
-            margin-top: 40px;
-            color: white;
-            font-size: 1em;
-            text-align: center;
-        }
-        .developer {
-            font-size: 1.2em;
-            color: #FFD700; /* ডার্ক গোল্ডেন */
-            margin-bottom: 10px;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-        .social-icons {
-            margin-top: 10px;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        .social-icons a {
-            color: white;
-            background-color: #1b1e23; /* ডার্ক ব্যাকগ্রাউন্ড আইকনগুলোর জন্য */
-            padding: 12px;
-            border-radius: 50%;
-            font-size: 28px;
-            transition: transform 0.3s, background-color 0.3s;
-        }
-        .social-icons a:hover {
-            transform: scale(1.2);
-            background-color: #282e39; /* হোভার করলে হালকা হবে */
-        }
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2em;
-            }
-            p {
-                font-size: 1em;
-            }
-            .button {
-                padding: 8px 16px;
-            }
-        }
-    </style>
 </head>
 <body>
     <div class="container">
@@ -161,3 +65,11 @@
         </footer>
     </div>
 
+    <script>
+        function showDescription() {
+            var description = document.getElementById('description');
+            description.style.display = description.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>
